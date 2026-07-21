@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: mytetrisgame
-        image: shaikmustafa/mytetrisgame:v1
+        image: shaikmustafa/mytetrisgame:v2
         ports:
-        - containerPort: 80
+        - containerPort: 3000
