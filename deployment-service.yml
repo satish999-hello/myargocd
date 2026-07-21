@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flm
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: zomoto
+  template:
+    metadata:
+      labels:
+        app: zomoto
+    spec:
+      containers:
+      - name: mytetrisgame
+        image: shaikmustafa/mytetrisgame
+        ports:
+        - containerPort: 80
