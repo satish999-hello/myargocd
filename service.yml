@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: flm-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: zomoto
   ports:
